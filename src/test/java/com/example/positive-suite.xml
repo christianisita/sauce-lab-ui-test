@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+    <suite name="suite-positive-case">
+        <test verbose="2" preserve-order="true" name="suite-positive-case">
+            <classes>
+                <class name="com.example.PositiveTest" />
+            </classes>
+        </test>
+    </suite>
