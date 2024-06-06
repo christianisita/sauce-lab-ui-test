@@ -14,7 +14,7 @@ This repository contains UI automation test script using sample web: https://sau
 To run test suites, run using this command:
 
    For Positive Case Suites:
-   ```mvn test -DsuiteXmlPath=src/test/java/com/example/positive-suite.xml```
+   ```mvn test -DsuiteXmlFile=src/test/java/com/example/positive-suite.xml```
 
    For Negative Case Suites:
-   ```mvn test -DsuiteXmlPath=src/test/java/com/example/positive-suite.xml```
+   ```mvn test -DsuiteXmlFile=src/test/java/com/example/positive-suite.xml```
