@@ -17,4 +17,4 @@ To run test suites, run using this command:
    ```mvn test -DsuiteXmlFile=src/test/java/com/example/positive-suite.xml```
 
    For Negative Case Suites:
-   ```mvn test -DsuiteXmlFile=src/test/java/com/example/positive-suite.xml```
+   ```mvn test -DsuiteXmlFile=src/test/java/com/example/negative-suite.xml```
