@@ -10,7 +10,9 @@ This repository contains UI automation test script using sample web: https://sau
 2. From terminal cd to this project path on your local ex: ```cd sauce-lab-ui-test```
 3. Run this command to install every dependency
    ```mvn clean install```
+
 To run test suites, run using this command:
+
    For Positive Case Suites:
    ```mvn test -DsuiteXmlPath=src/test/java/com/example/positive-suite.xml```
 
