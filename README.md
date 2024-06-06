@@ -9,7 +9,7 @@ This repository contains UI automation test script using sample web: https://sau
 1. Clone this repository to your local machine
 2. From terminal cd to this project path on your local ex: ```cd sauce-lab-ui-test```
 3. Run this command to install every dependency
-   ```mvn clean install```
+   ```mvn clean install -DskipTests```
 
 To run test suites, run using this command:
 
