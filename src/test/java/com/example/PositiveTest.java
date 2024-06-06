@@ -24,16 +24,14 @@ public class PositiveTest extends DriverManager{
     public void canSeeLoginPageTest(){
         driver.get("https://www.saucedemo.com/");
 
-        boolean inputUsernameVisible = loginObject.getInputPassword().isDisplayed();
-        boolean inputPasswordVisible = loginObject.getInputPassword().isDisplayed();
-        boolean loginButtonVisible = loginObject.getButtonLogin().isDisplayed();
+        boolean inputUsernameVisible = Helper.isVisible(loginObject.getInputUsername());
+        boolean inputPasswordVisible = Helper.isVisible(loginObject.getInputPassword());
+        boolean loginButtonVisible = Helper.isVisible(loginObject.getButtonLogin());
 
         Assert.assertTrue(inputUsernameVisible);
         Assert.assertTrue(inputPasswordVisible);
         Assert.assertTrue(loginButtonVisible);
     }
-
-    //https://www.saucedemo.com/inventory.html
 
     @Test(priority = 2)
     public void canLoginUsingCorrectCredentialTest(){
@@ -42,7 +40,7 @@ public class PositiveTest extends DriverManager{
         loginPageAction.clickLoginButton();
 
         String currentUrl = driver.getCurrentUrl();
-        boolean homeTitleVisible = homeObject.getTextHomePageTitle().isDisplayed();
+        boolean homeTitleVisible = Helper.isVisible(homeObject.getTextHomePageTitle());
 
         Assert.assertEquals(currentUrl, "https://www.saucedemo.com/inventory.html");
         Assert.assertTrue(homeTitleVisible);
@@ -50,11 +48,11 @@ public class PositiveTest extends DriverManager{
 
     @Test(priority = 3)
     public void canSeeProductCardTest(){
-        boolean imageProductCardVisible = homeObject.getImageProductCard().isDisplayed();
-        boolean textProductTitleVisible = homeObject.getTextProductTitle().isDisplayed();
-        boolean textProductDescriptionVisible = homeObject.getTextProductDescription().isDisplayed();
-        boolean textProductPriceVisible = homeObject.getTextProductPrice().isDisplayed();
-        boolean buttonAtcGeneralVisible = homeObject.getGeneralAtcButton().isDisplayed();
+        boolean imageProductCardVisible = Helper.isVisible(homeObject.getImageProductCard());
+        boolean textProductTitleVisible = Helper.isVisible(homeObject.getTextProductTitle());
+        boolean textProductDescriptionVisible = Helper.isVisible(homeObject.getTextProductDescription());
+        boolean textProductPriceVisible = Helper.isVisible(homeObject.getTextProductPrice());
+        boolean buttonAtcGeneralVisible = Helper.isVisible(homeObject.getGeneralAtcButton());
 
         Assert.assertTrue(imageProductCardVisible);
         Assert.assertTrue(textProductTitleVisible);

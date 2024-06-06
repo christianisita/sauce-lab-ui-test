@@ -1,7 +1,5 @@
 package com.example.pages;
 
-import org.openqa.selenium.WebElement;
-
 import com.example.objects.HomeObject;
 
 public class HomePage extends BasePage{
@@ -13,5 +11,9 @@ public class HomePage extends BasePage{
 
     public void removeAddToCartSauceLabBagpack(){
         homeObject.getRemoveButtonSauceLabBagPack().click();
+    }
+
+    public void goToCartPage(){
+        homeObject.getCartButton().click();
     }
 }

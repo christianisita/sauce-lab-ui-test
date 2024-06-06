@@ -15,4 +15,7 @@ public class LoginObject extends BaseObject{
 
     @FindBy(xpath = "//*[@data-test='login-button']")
     private WebElement buttonLogin;
+
+    @FindBy(xpath = "//*[@data-test='error']")
+    private WebElement errorText;
 }

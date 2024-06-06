@@ -1,7 +1,6 @@
 package com.example.pages;
 
-import org.openqa.selenium.WebElement;
-
+import com.example.Helper;
 import com.example.objects.LoginObject;
 
 public class LoginPage extends BasePage{
@@ -12,10 +11,12 @@ public class LoginPage extends BasePage{
     }
 
     public void inputUsername(String username){
+        Helper.clearText(loginObject.getInputUsername());
         loginObject.getInputUsername().sendKeys(username);
     }
 
     public void inputPassword(String password){
+        Helper.clearText(loginObject.getInputPassword());
         loginObject.getInputPassword().sendKeys(password);
     }
 }
